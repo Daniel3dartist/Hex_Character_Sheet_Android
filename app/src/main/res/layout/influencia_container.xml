@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/corpo_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    tools:showIn="@layout/activity_character_sheet">
+
+    <TextView
+        android:id="@+id/corpo_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/corpo_status_text"
+        android:layout_width="60dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="00"
+        android:textAlignment="center" />
+
+</LinearLayout>
