@@ -36,34 +36,97 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginStart="20dp"
             android:orientation="vertical">
 
             <LinearLayout
-                android:id="@+id/corpo_container"
+                android:id="@+id/status_container"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:gravity="center_horizontal"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/corpo_label"
+                <LinearLayout
+                    android:id="@+id/corpo_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginTop="0px"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/corpo_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Corpo"
+                        android:textSize="50px" />
+
+                    <EditText
+                        android:id="@+id/corpo_status_text"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:text="00"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mente_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15px"
+                    android:layout_marginTop="0px"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mente_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0px"
+                        android:text="Mente"
+                        android:textSize="50px" />
+
+                    <EditText
+                        android:id="@+id/mente_status_text"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:text="00"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/influencia_container"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Corpo"
-                    android:textSize="60px" />
+                    android:orientation="vertical">
 
-                <EditText
-                    android:id="@+id/corpo_status_text"
-                    android:layout_width="60dp"
-                    android:layout_height="41dp"
-                    android:ems="10"
-                    android:inputType="numberDecimal"
-                    android:text="00"
-                    android:textAlignment="center" />
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0px"
+                        android:text="Influência"
+                        android:textSize="50px" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18px"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:text="00"
+                        android:textAlignment="center"
+                        tools:visibility="visible" />
+                </LinearLayout>
 
             </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>

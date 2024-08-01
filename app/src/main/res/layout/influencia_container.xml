@@ -10,7 +10,7 @@
     tools:showIn="@layout/activity_character_sheet">
 
     <TextView
-        android:id="@+id/corpo_label"
+        android:id="@+id/mente_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView" />
